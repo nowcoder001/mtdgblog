@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/Public/css/amazeui.min.css" />
+		<link rel="stylesheet" href="/Public/css/admin.css" />
+		<style type="text/css">
+			.tab li{
+				list-style: none;
+				float: left;
+				width: 98px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				border: 1px solid #0e90d2;
+				color:#0e90d2;
+				border-radius: 4px;
+				margin: 0 10px;
+			}
+			.tab:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+
+	<body onload="init(<?php echo $which;?>)">
+		<div class="admin-content-body">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">网站统计</strong><small></small></div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">总点击量</th>
+									<th class="table-title">本日点击量</th>
+									<th class="table-title">总文章数量</th>
+									<th class="table-title">总评论数</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><?php echo $num['numall'];?></td>
+									<td><?php echo $num['numtod'];?></td>
+									<td><?php echo $artnum;?></td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+<!-- 使用JS实现Tab浏览 -->
+<ul class='tab'>
+	<li id="li1" onmouseover="showDiv(1,this)">第一屏</li>
+	<li id="li2" onmouseover="showDiv(2,this)">第二屏</li>
+	<li id="li3" onmouseover="showDiv(3,this)">第三屏</li>
+	<li id="li4" onmouseover="showDiv(4,this)">第四屏</li>
+	<li id="li5" onmouseover="showDiv(5,this)">第五屏</li>
+	<li id="li6" onmouseover="showDiv(6,this)">分类</li>
+</ul>
+<!-- 第一屏 -->
+		<div class="admin-content-body" id="div1">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">第一屏:首页信息</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=1">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 首页第一屏主标题 -->
+								<tr>
+									<td>首页第一屏主标题</td>
+									<td><?php echo $home['htitle1'];?></td>
+								</tr>
+								<!-- 首页第一屏副标题 -->
+								<tr>
+									<td>首页第一屏副标题</td>
+									<td><?php echo $home['hcontent1'];?></td>
+								</tr>
+								<!-- 首页第一屏了解我超链接 -->
+								<tr>
+									<td>首页第一屏了解我超链接</td>
+									<td><?php echo $home['hurl1'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+<!-- 第二屏 -->
+		<div class="admin-content-body" id="div2">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">第二屏:自我介绍</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=2">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>青蓝色第二屏标题</td>
+									<td><?php echo $home['htitle2'];?></td>
+								</tr>
+								<tr>
+									<td>青蓝色第二屏副标题</td>
+									<td><?php echo $home['hcontent2'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+<!-- 第三屏 -->
+		<div class="admin-content-body" id="div3">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">第三屏:三格子学习理念</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=3">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>三格子左1标题</td>
+									<td><?php echo $home['htitleleft1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子左1副标题</td>
+									<td><?php echo $home['hmintitleleft1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子左1内容</td>
+									<td><?php echo $home['hcontentleft1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子右1标题</td>
+									<td><?php echo $home['htitleright1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子右1副标题</td>
+									<td><?php echo $home['hmintitleright1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子右1内容</td>
+									<td><?php echo $home['hcontentright1'];?></td>
+								</tr>
+								<tr>
+									<td>三格子左2标题</td>
+									<td><?php echo $home['htitleleft2'];?></td>
+								</tr>
+								<tr>
+									<td>三格子左2副标题</td>
+									<td><?php echo $home['hmintitleleft2'];?></td>
+								</tr>
+								<tr>
+									<td>三格子左2内容</td>
+									<td><?php echo $home['hcontentleft2'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+<!-- 第四屏 -->
+		<div class="admin-content-body" id="div4">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">第四屏:紫色项目展示</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=4">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>紫色第四屏标题</td>
+									<td><?php echo $home['hpurtitle'];?></td>
+								</tr>
+								<tr>
+									<td>紫色第四屏副标题</td>
+									<td><?php echo $home['hpurmintitle'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+<!-- 第五屏 -->
+		<div class="admin-content-body" id="div5">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">第五屏:赞助</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=5">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>赞助主标题</td>
+									<td><?php echo $home['gifttitle'];?></td>
+								</tr>
+								<tr>
+									<td>赞助副标题</td>
+									<td><?php echo $home['giftmintitle'];?></td>
+								</tr>
+								<tr>
+									<td>赞助二维码</td>
+									<td><?php echo $home['pic'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+<!-- 分类 -->
+		<div class="admin-content-body" id="div6">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">分类</strong><small></small></div>
+				<div class="am-btn-group am-btn-group-xs" style="float: right">
+						<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span><a href="index.php?p=Admin&c=New&a=new&which=6">修改</a></button>
+				</div>
+			</div>
+			<hr>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-title">位置</th>
+									<th class="table-set">信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>分类页面1标题</td>
+									<td><?php echo $home['title1'];?></td>
+								</tr>
+								<tr>
+									<td>分类页面1副标题</td>
+									<td><?php echo $home['content1'];?></td>
+								</tr>
+								<tr>
+									<td>分类页面2标题</td>
+									<td><?php echo $home['title2'];?></td>
+								</tr>
+								<tr>
+									<td>分类页面2副标题</td>
+									<td><?php echo $home['content2'];?></td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function showDiv(n,m){
+		//隐藏所有div
+		for(var i=1;i<=6;i++){
+			var AllDiv=document.getElementById("div"+i);
+			AllDiv.style.display="none";
+		}
+		//重构li边框
+		for(var j=1;j<=6;j++){
+			var AllLi=document.getElementById("li"+j);
+			AllLi.style.border="1px solid #0e90d2";
+			AllLi.style.backgroundColor="#fff";
+			AllLi.style.color="#0e90d2";
+		}
+		//获得对象div
+		var obj=document.getElementById("div"+n);
+		var m=document.getElementById("li"+n);
+		obj.style.display="block";
+		m.style.color="#fff";
+		m.style.backgroundColor="#0e90d2";
+	}
+	//一旦加载就必须完成
+	function init(n){
+		//把所有div内容隐藏
+		for(var i=1;i<=6;i++){
+			var AllDiv=document.getElementById("div"+i);
+			AllDiv.style.display="none";
+		}
+		//把所有li边框都清除
+		for(var j=1;j<=6;j++){
+			var AllLi=document.getElementById("li"+j);
+			AllLi.style.border="1px solid #0e90d2";
+			AllLi.style.backgroundColor="#fff";
+			AllLi.style.color="#0e90d2";
+		}
+		//获取div对象
+		var obj=document.getElementById("div"+n);
+		var m=document.getElementById("li"+n);
+		obj.style.display="block";
+		m.style.color="#fff";
+		m.style.backgroundColor="#0e90d2";
+	}
+</script>

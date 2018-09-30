@@ -1,0 +1,606 @@
+/*
+* @Author: King
+* @Date:   2018-09-11 20:45:06
+* @Last Modified by:   King
+* @Last Modified time: 2018-09-26 15:14:19
+*/
+nav{
+	background: transparent;
+	height: 50px;
+}
+header{
+	background: rgba(0,0,0,0.4);
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+nav ul li,nav .logo{
+	display: inline-block;
+	line-height: 50px;
+	/*float: right;*/
+	margin-right: 20px;
+}
+nav ul li a,nav .logo a{
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+}
+nav div.logo{
+	float: left;
+	padding:0 10px;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#sidebar_trigger a i{
+	margin-left: 2px;
+}
+#banner{
+	background: transparent;
+	height: 715px;
+}
+#banner.article {
+	height: 300px;
+}
+#banner .inner{
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 160px;
+}
+#banner.article .inner{
+	top: 30px;
+}
+#banner .inner h1{
+	color: #fff;
+	margin: 0;
+}
+button{
+	border:none;
+	background: #089db0;
+	color: #eee;
+	padding: 10px;
+	border-radius: 4px;
+}
+button a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+}
+#banner  .inner button{
+	padding: 14px 40px;
+}
+#banner .inner .more{
+	color: #fff;
+	margin-top: 180px;
+}
+.sub-heading{
+	color: #fff;
+	line-height: 30px;
+	margin: 30px 0;
+	font-size: 18px;
+	max-height: 150px;
+	overflow: hidden;
+}
+.logo{
+	font-size: 20px;
+	font-weight: 700;
+	/*×ÖÌå¼ä¾à*/
+	letter-spacing: 1px;
+}
+.logo a{
+	color: #fff;
+}
+.active{
+	border:-bottom:4px solid #fff;
+}
+h1{
+	padding: 12px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.article h1{
+	border: none;
+}
+h2{
+	font-size: 30px;
+	height: 40px;
+}
+h3{
+	font-size: 24px;
+	height: 31px;
+}
+p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+ul{
+	margin: 0;
+}
+.hr{
+	width: 100%;
+ 	margin: 38px auto;
+ 	height: 2px;
+}
+
+.green-section{
+	text-align: center;
+	background: #089DB0;
+	color: #fff;
+	padding: 100px 0;
+}
+.green-section .hr{
+	background: #078494;
+}
+.green-section .icon-group{
+	margin-top: 60px;
+}
+.green-section .icon-group .icon{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	background: #0D6F7C;
+	transform: rotate(45deg);
+	margin: 44px;
+	position: relative;
+}
+.green-section .icon-group .icon i{
+	transform: rotate(-45deg);
+    margin-left: 1px;
+    margin-top: 7px;
+}
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.gray-section{
+	background: #252F34;
+	color: #fff;
+	overflow: hidden;
+}
+.gray-section .img-section{
+	width: 45%;
+}
+.img-section img{
+	width: 100%;
+	height: 402px;
+	vertical-align: bottom;
+}
+.gray-section .text-section{
+	width: 55%;
+	position: relative;
+	top: 68px;
+	left: 50px;
+}
+.article-preview{
+	/*´ýÉý¼¶ÎªÏìÓ¦Ê½Ê±ºòÐÞ¸Ä*/
+	overflow: hidden;
+}
+.article-preview > div{
+	float: left;
+}
+.article-preview:nth-child(odd){
+	background-color: rgba(255,255,255,0.05);
+}
+.article-preview:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.article p{
+	margin: 0;
+	padding: 0;
+}
+.gray-section .text-section h2{
+	margin-bottom: 20px;
+}
+.gray-section .text-section p{
+	font-size: 18px;
+	max-width: 80%;
+	letter-spacing: 2px;
+    height: 172px;
+    overflow: hidden;
+}
+.gray-section .text-section h2{
+	width: 80%;
+    height: 40px;
+    overflow: hidden;
+}
+.gray-section .text-section .sub-heading{
+	font-size: 22px;
+	margin-top: 0;
+	width: 80%;
+    height: 30px;
+    overflow: hidden;
+}
+.purple-section{
+	background: #3F3965;
+	color: #fff;
+	padding: 20px;
+}
+.purple-section .heading-wrapper{
+	text-align: center;
+}
+.purple-section .hr{
+	background: #373259;
+	width: 60%;
+}
+
+.card{
+	float: left;
+	width: 50%;
+	height: 365px;
+	padding: 0 50px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	/*border: 1px solid white;*/
+}
+.card p img{
+	width: 440px;
+	height: 200px;
+}
+.card p{
+	height: 190px;
+}
+.card p#p2{
+	height:73px;
+	overflow: hidden;
+}
+.card:first-child{
+	background: rgba(0,0,0,0.04);
+}
+.card:nth-child(2){
+	background: rgba(0,0,0,0.08);
+}
+.card:nth-child(3){
+	background: rgba(0,0,0,0.12);
+}
+.card:nth-child(4){
+	background: rgba(0,0,0,0.16);
+}
+.card:nth-child(5){
+	background: rgba(0,0,0,0.20);
+}
+.card:nth-child(6){
+	background: rgba(0,0,0,0.24);
+}
+footer{
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+}
+.share{
+	background: rgba(0,0,0,0.8);
+	min-height: 200px;
+}
+ul.share-group{
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px;
+}
+.copy{
+	padding-bottom: 20px;
+}
+.main-wrapper{
+	background: #444 url(../images/banner.jpg);
+	/*¹Ì¶¨±³¾°²»ÒÆ¶¯*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+    min-height: 741px;
+}
+.sponsor{
+	background: rgba(0,0,0,0.4);
+	min-height: 220px;
+	padding: 50px 100px;
+	overflow: hidden;
+}
+.sponsor > div{
+	float: left;
+}
+.sponsor .sponsor-left{
+	width: 60%;
+	padding-left: 50px;
+	text-align: left;
+}
+.sponsor .sponsor-left p,.sponsor .sponsor-left h3{
+	width: 60%;
+	margin-left: 200px;
+}
+.sponsor .sponor-right{
+	width: 300px;
+	height: 190px;
+	padding: 20px 0;
+}
+.sponsor .sponor-right a{
+	display: block;
+	width: 30%;
+	color: #fff;
+	line-height: 100%;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 20px 45px;
+	margin: 20px 0;
+    border-radius: 5px;
+}
+.sponsor .sponor-right a:hover{
+	background: #fff;
+	color: #fbc97d;
+}
+.sponsor .sponor-right a i{
+	margin-right: 3px;
+}
+.mask{
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);
+}
+/*博客侧边栏样式*/
+#sidebar{
+	/*display: none;*/
+	position: fixed;
+	top: 0;
+	right: -300px;
+	bottom: 0;
+	width: 300px;
+	background: #333;
+	padding: 20px 0;
+}
+#sidebar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#sidebar ul a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 30px;
+	display: inline-block;
+	width: 100%;
+}
+#sidebar ul a:hover{
+	background: #444;
+}
+.back-to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border: 1px solid #888;
+	background: transparent;
+    color: #caaaaa;
+}
+.article.content{
+	background: rgba(255,255,255,0.9);
+}
+.content-wrapper{
+	width: 1080px;
+	margin: 0 auto;
+
+}
+.article-info{
+	font-size: 14px;
+	color: #888;
+	padding: 15px 0;
+
+}
+article{
+	line-height: 2;
+	padding: 0 0 20px 0;
+}
+/*博客文章页面样式*/
+.list{
+	/*width: 80%;*/
+	height: auto;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.4);
+    padding: 0 100px;
+}
+.list .listhead{
+	width: 100%;
+	height: auto;
+	background: rgba(0,0,0,0.6);
+	padding: 15px 0;
+	color: white;
+}
+.list .listhead .hr{
+	width: 90%;
+	background: rgba(0,0,0,0.9);
+	margin: 10px auto;
+}
+.list .listhead ul li{
+	list-style: none;
+	float: left;
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.list .listhead ul li a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+}
+.list .listhead ul:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.list .listmain{
+	width: 100%;
+	color: white;
+	height: auto;
+	overflow: hidden;
+}
+.list .listmain .listcontent{
+	width: 100%;
+	height: 300px;
+	background: rgba(0,0,0,0.7);
+    margin: 12px auto;
+	position: relative;
+}
+.list .listmain .listcontent a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+    width: 100%;
+}
+.list .listmain .listcontent .img,.list .listmain .listcontent .img img{
+	width: 40%;
+	height: 100%;
+	float: right;
+}
+.list .listmain .listcontent .img img{
+	width: 100%;
+}
+.list .listmain .listcontent .title{
+	margin: 0;
+	padding: 10px;
+}
+.list .listmain .listcontent .content{
+	padding: 10px;
+	letter-spacing: 1px;
+	height: 160px;
+	width: 58%;
+	overflow: hidden;
+}
+.list .listmain .listcontent .name,
+.list .listmain .listcontent .time,
+.list .listmain .listcontent .cat,
+.list .listmain .listcontent .tag{
+	float: left;
+	margin-right: 10px;
+	height: 21px;
+}
+.lc-bottom{
+	overflow: hidden;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	height: 21px;
+	max-width: 685px;
+}
+/*分页样式*/
+.page{
+	height: 40px;
+	width: 100%;
+}
+.page .pagelist{
+    margin: 5px auto;
+    overflow: hidden;
+    padding: 6px 0;
+}
+.page .pagelist ul{
+	text-align: center;
+}
+.page .pagelist ul li{
+	display: inline;
+	padding: 3px 9px;
+	margin-right: 5px;
+	color: white;
+	border: 1px solid black;
+}
+.page .pagelist ul li a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+}
+/*博客案例页面样式2-瀑布流页面布局*/
+.listmain2{
+	width: 100%;
+	color: white;
+	height: auto;
+	overflow: hidden;
+	padding: 15px 40px;
+}
+.listmain2 ul>li{
+	list-style: none;
+}
+.listmain2 .listposition{
+	height: 442px;
+    width: 28%;
+    margin: 2px 20px 18px;
+	overflow: hidden;
+	float: left;
+}
+.listmain2 .listposition .listcontent{
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	padding: 0;
+	position: relative;
+}
+.listmain2 .listposition .listcontent a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+}
+.listmain2 .listposition .listcontent .img,
+.listmain2 .listposition .listcontent .img img{
+	width: 100%;
+	height: 200px;
+}
+.listmain2 .listposition .listcontent h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+    height: auto;
+}
+.listmain2 .listposition .listcontent .content{
+	margin-top: 2px;
+	height: auto;
+	max-height: 193px;
+	overflow: hidden;
+}
+.listmain2 .listposition .listcontent .lc-bottom2{
+	font-size: 10px;
+	padding: 0 3px;
+}
+.listmain2 .listposition .listcontent .title,
+.listmain2 .listposition .listcontent .lc-bottom2 .name,
+.listmain2 .listposition .listcontent .lc-bottom2 .time,
+.listmain2 .listposition .listcontent .lc-bottom2 .cat,
+.listmain2 .listposition .listcontent .lc-bottom2 .tag{
+	margin: 3px 4px;
+}
+.listmain2 .listposition .listcontent button{
+	position: absolute;
+	bottom: 20px;
+	right: 16px;
+}
+.listmain2 .listposition .listcontent button.bt2{
+	right:70px;
+}
+.loading{
+	width: 100%;
+	margin: 0 auto;
+	padding: 14px 0;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+}

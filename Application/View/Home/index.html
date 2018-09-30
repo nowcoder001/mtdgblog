@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>杰哥博客_用文字记录点滴成长</title>
+	<!-- reset -->
+	<link rel="stylesheet" href="/Public/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/Public/css/home-main.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main-wrapper">
+	 	<div>
+			<!-- header -->
+			<header>
+			<nav>
+				<div class="logo"><a href="index.php">FZ杰哥</a></div>
+				<ul>
+					<li><a href="index.php" class="active">首页</a></li>
+					<li><a href="index.php?p=Home&c=Home&a=list">分类</a></li>
+					<li id="sidebar_trigger"><a href="#">MENU<i class="fa fa-align-justify"></i></a></li>
+				</ul>
+			</nav>
+			<div id="banner">
+				<div class="inner">
+					<h1><?php echo $home['htitle1'];?></h1>
+					<p class="sub-heading"><?php echo $home['hcontent1'];?></p>
+					<button><a href="<?php echo $home['hurl1'];?>">芝麻开门</a></button>
+					<div class="more">
+						<p>更多</p>
+						<i class="fa fa-angle-double-down fa-2x"></i>
+					</div>
+				</div>
+			</div>
+			</header>
+			<!-- content -->
+			<div class="content">
+				<section class="green-section">
+					<div class="wrapper">
+						<div>
+							<h2><?php echo $home['htitle2'];?></h2>
+							<div class="hr"></div>
+							<p class="sub-heading"><?php echo $home['hcontent2'];?></p>
+						</div>
+						<div class="icon-group">
+							<span class="icon"><i class="fa fa-child fa-4x"></i></span>
+							<span class="icon"><i class="fa fa-code fa-4x"></i></span>
+							<span class="icon"><i class="fa fa-trophy fa-4x"></i></span>
+						</div>
+					</div>
+				</section>
+				<section class="gray-section">
+					<div class="article-preview">
+						<div class="img-section">
+							<img src="/Public/images/pic01.jpg">
+						</div>
+						<div class="text-section">
+							<h2><?php echo $home['htitleleft1'];?></h2>
+							<div class="sub-heading"><?php echo $home['hmintitleleft1'];?></div>
+							<p><?php echo $home['hcontentleft1'];?></p>
+						</div>
+					</div>
+					<div class="article-preview">
+						<div class="text-section">
+							<h2><?php echo $home['htitleright1'];?></h2>
+							<div class="sub-heading"><?php echo $home['hmintitleright1'];?></div>
+							<p><?php echo $home['hcontentright1'];?></p>
+						</div>
+						<div class="img-section">
+							<img src="/Public/images/pic02.jpg">
+						</div>
+					</div>
+					<div class="article-preview">
+						<div class="img-section">
+							<img src="/Public/images/pic03.jpg">
+						</div>
+						<div class="text-section">
+							<h2><?php echo $home['htitleleft2'];?></h2>
+							<div class="sub-heading"><?php echo $home['hmintitleleft2'];?></div>
+							<p><?php echo $home['hcontentleft2'];?></p>
+						</div>
+					</div>
+				</section>
+				<section class="purple-section">
+				<div class="wrapper">
+					<div class="heading-wrapper">
+						<h2><?php echo $home['hpurtitle'];?></h2>
+						<div class="hr"></div>
+						<div class="sub-heading">
+						<?php echo $home['hpurmintitle'];?>
+						</div>
+					</div>
+					<div class="card-group clearfix">
+					<?php foreach($pro as $p){?>
+						<div class="card">
+							<h3><?php echo $p['title'];?></h3>
+							<p><img src="/Public/uploads/<?php echo $p['pic'];?>"></p>
+							<p id="p2"><?php 
+									$newContent = strip_tags(stripslashes($p['content']));
+									$newContent = trim($newContent);
+									$patternArr = array('/\s/','/ /');
+									$replaceArr = array('','');
+									$newContent = preg_replace($patternArr,$replaceArr,$newContent);
+									$newContent = mb_strcut($newContent,0,220,'utf-8');
+									echo $newContent."......";?></p>
+						</div>
+						<?php }?>
+					</div>
+				</div>
+				</section>
+			</div>
+			<!-- footer -->
+			<footer>
+				<div class="sponsor">
+				<div class="sponsor-left">
+				<h3><?php echo $home['gifttitle'];?></h3>
+				<p><?php echo $home['giftmintitle'];?></p>
+				</div>
+				<div class="sponor-right">
+				<a href="#"><i class="fa fa-cc-visa"></i>赞助我</a>
+				<a href="#"><i class="fa fa-bitbucket"></i>喂养我</a>
+				</div>
+				</div>
+				<div class="share">
+					<ul class="share-group">
+						<li><i class="fa fa-facebook-square"></i></li>
+						<li><i class="fa fa-github"></i></li>
+						<li><i class="fa fa-qq"></i></li>
+						<li><i class="fa fa-weixin"></i></li>
+						<li><i class="fa fa-weibo"></i></li>
+					</ul>
+					<div class="copy">
+						&copy FZ杰哥 -2018
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- 侧栏,独立存在的 -->
+	<div class="mask"></div>
+	<div id="sidebar">
+	<ul>
+		<?php foreach($list as $v){?>
+		<li>
+		<?php 
+			static $n=0;
+			if($v['deep']==0)$n++;
+			if($v['parentid']==0){?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
+			<?php }else{?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
+			<?php }
+				if(!empty($v['deep']))
+					for($i=0;$i<$v['deep'];$i++)
+						echo "--";
+						echo $v['name'];
+				?>
+			</a>
+		</li>
+		<?php } ?>
+		<li><a href="index.php?p=Admin&c=Admin&a=admin">登陆</a></li>
+	</ul>
+	</div>
+	<button class="back-to-top">返回顶部</button>
+	<script src="/Public/js/jquery.min.js"></script>
+	<script src="/Public/js/main.js"></script>
+</body>
+</html>

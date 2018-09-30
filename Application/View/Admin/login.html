@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" type="text/css" href="/Public/css/login.css">
+</head>
+<body>
+	<div id="login">
+		<form action="" method="post">
+		<p><img src="/Public/images/login_index.gif" width="30%" height="30%"></p>
+		<p class="t1">杰哥博客，用文字记录点滴成长</p>
+		<p class="t2">技术，创作，杂谈，无所不欢</p>
+		<p>登录账号：<input class="textbox" type="text" name="username"></p>
+		<p>登录密码：<input class="textbox" type="password" name="password"></p>
+		<p class="code">验证码：<input  type="code" name="code"><img src="index.php?p=Admin&c=Login&a=generalCaptcha" alt="CAPTCHA" onclick="this.src='index.php?p=Admin&c=Login&a=generalCaptcha&'+Math.random()" title="看不清？点击换一个验证码"></p>
+		<p class="remember"><span>请问是否记住账号</span><input type="checkbox" name="remember"></p>
+		<p class="clear"></p>
+		<p><span><input class="submit" type="submit" value="确认登录" name="">
+		<input class="button" type="button" value="注册账号" name="" onClick="return confirm('暂未开放帐号注册功能哦~敬请期待~')"></span></p>
+		<!-- 增加了注册功能的话,上面就按照这个来修改onclick='location.href=("index.php")' -->
+		<p><a class="forget" href="index.php">#游客访问</a>&nbsp;&nbsp;&nbsp;<a class="forget" href="#" onClick="return confirm('神马?人家那么重要,你居然忘记了,那我也不告诉你~')">#忘记账号</a>&nbsp;&nbsp;&nbsp;<a class="forget" href="#" onClick="return confirm('密码这么重要你这么可以忘记人家,罚你不能登录~')">#忘记密码</a></p>
+		</form>
+	</div>
+
+</body>
+</html>

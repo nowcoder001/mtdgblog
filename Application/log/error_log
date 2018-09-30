@@ -1,0 +1,281 @@
+[19-Sep-2018 16:32:27 PRC] PHP Notice:  Undefined variable: list in F:\myphp_www\PHPTutorial\WWW\Application\View\Home\index.html on line 166
+[19-Sep-2018 16:32:27 PRC] PHP Warning:  Invalid argument supplied for foreach() in F:\myphp_www\PHPTutorial\WWW\Application\View\Home\index.html on line 166
+[22-Sep-2018 10:58:00 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 10:58:00 PRC] PHP Stack trace:
+[22-Sep-2018 10:58:00 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 10:58:00 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 10:58:00 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 10:58:15 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 10:58:15 PRC] PHP Stack trace:
+[22-Sep-2018 10:58:15 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 10:58:15 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 10:58:15 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:03:12 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:03:12 PRC] PHP Stack trace:
+[22-Sep-2018 11:03:12 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 11:03:12 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 11:03:12 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:03:35 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:03:35 PRC] PHP Stack trace:
+[22-Sep-2018 11:03:35 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 11:03:35 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 11:03:35 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:04:19 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:04:19 PRC] PHP Stack trace:
+[22-Sep-2018 11:04:19 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 11:04:19 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 11:04:19 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:05:59 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in F:\wamp\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:05:59 PRC] PHP Stack trace:
+[22-Sep-2018 11:05:59 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[22-Sep-2018 11:05:59 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[22-Sep-2018 11:05:59 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:53:52 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:53:52 PRC] PHP Stack trace:
+[22-Sep-2018 11:53:52 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[22-Sep-2018 11:53:52 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[22-Sep-2018 11:53:52 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[22-Sep-2018 11:55:05 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[22-Sep-2018 11:55:05 PRC] PHP Stack trace:
+[22-Sep-2018 11:55:05 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[22-Sep-2018 11:55:05 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[22-Sep-2018 11:55:05 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 04:59:29 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 04:59:29 UTC] PHP Stack trace:
+[23-Sep-2018 04:59:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 04:59:29 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 04:59:29 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 04:59:29 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 04:59:29 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 04:59:29 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 04:59:29 UTC] PHP Stack trace:
+[23-Sep-2018 04:59:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 04:59:29 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 04:59:29 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 04:59:29 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 04:59:29 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:49:39 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 14:49:39 UTC] PHP Stack trace:
+[23-Sep-2018 14:49:39 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 14:49:39 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 14:49:39 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 14:49:39 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:49:39 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:49:39 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 14:49:39 UTC] PHP Stack trace:
+[23-Sep-2018 14:49:39 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 14:49:39 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 14:49:39 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 14:49:39 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:49:39 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:51:55 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 14:51:55 UTC] PHP Stack trace:
+[23-Sep-2018 14:51:55 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 14:51:55 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 14:51:55 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 14:51:55 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:51:55 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:51:55 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[23-Sep-2018 14:51:55 UTC] PHP Stack trace:
+[23-Sep-2018 14:51:55 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[23-Sep-2018 14:51:55 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[23-Sep-2018 14:51:55 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[23-Sep-2018 14:51:55 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[23-Sep-2018 14:51:55 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[25-Sep-2018 18:46:29 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[25-Sep-2018 18:46:29 PRC] PHP Stack trace:
+[25-Sep-2018 18:46:29 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 18:46:29 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 18:46:29 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 18:46:38 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[25-Sep-2018 18:46:38 PRC] PHP Stack trace:
+[25-Sep-2018 18:46:38 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 18:46:38 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 18:46:38 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 18:46:39 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[25-Sep-2018 18:46:39 PRC] PHP Stack trace:
+[25-Sep-2018 18:46:39 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 18:46:39 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 18:46:39 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 18:46:40 PRC] PHP Fatal error:  Call to undefined method AdminController::newAction() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[25-Sep-2018 18:46:40 PRC] PHP Stack trace:
+[25-Sep-2018 18:46:40 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 18:46:40 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 18:46:40 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:05 PRC] PHP Warning:  mkdir(): No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 83
+[25-Sep-2018 23:39:05 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:05 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:05 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:05 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:05 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:05 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:05 PRC] PHP   6. mkdir() C:\wamp64\www\Framework\Lib\UploadLib.class.php:83
+[25-Sep-2018 23:39:05 PRC] PHP Warning:  move_uploaded_file(./Public/uploads/\2018-09-25\5baa56998cf2d0.60922532.jpg): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:39:05 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:05 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:05 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:05 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:05 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:05 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:05 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[25-Sep-2018 23:39:05 PRC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\wamp64\tmp\php6E02.tmp' to './Public/uploads/\2018-09-25\5baa56998cf2d0.60922532.jpg' in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:39:05 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:05 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:05 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:05 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:05 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:05 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:05 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[25-Sep-2018 23:39:45 PRC] PHP Warning:  mkdir(): No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 83
+[25-Sep-2018 23:39:45 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:45 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:45 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:45 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:45 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:45 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:45 PRC] PHP   6. mkdir() C:\wamp64\www\Framework\Lib\UploadLib.class.php:83
+[25-Sep-2018 23:39:45 PRC] PHP Warning:  move_uploaded_file(./Public/uploads/\2018-09-25\5baa56c1d19cf6.74248615.jpg): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:39:45 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:45 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:45 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:45 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:45 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:45 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:45 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[25-Sep-2018 23:39:45 PRC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\wamp64\tmp\phpB5D.tmp' to './Public/uploads/\2018-09-25\5baa56c1d19cf6.74248615.jpg' in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:39:45 PRC] PHP Stack trace:
+[25-Sep-2018 23:39:45 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:39:45 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:39:45 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:39:45 PRC] PHP   4. ArtController->arteditAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:39:45 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:100
+[25-Sep-2018 23:39:45 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[25-Sep-2018 23:40:26 PRC] PHP Warning:  mkdir(): No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 83
+[25-Sep-2018 23:40:26 PRC] PHP Stack trace:
+[25-Sep-2018 23:40:26 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:40:26 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:40:26 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:40:26 PRC] PHP   4. ArtController->artaddAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:40:26 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:48
+[25-Sep-2018 23:40:26 PRC] PHP   6. mkdir() C:\wamp64\www\Framework\Lib\UploadLib.class.php:83
+[25-Sep-2018 23:40:26 PRC] PHP Warning:  move_uploaded_file(./Public/uploads/\2018-09-25\5baa56ea316551.97607841.png): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:40:26 PRC] PHP Stack trace:
+[25-Sep-2018 23:40:26 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:40:26 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:40:26 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:40:26 PRC] PHP   4. ArtController->artaddAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:40:26 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:48
+[25-Sep-2018 23:40:26 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[25-Sep-2018 23:40:26 PRC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\wamp64\tmp\phpA8F5.tmp' to './Public/uploads/\2018-09-25\5baa56ea316551.97607841.png' in C:\wamp64\www\Framework\Lib\UploadLib.class.php on line 88
+[25-Sep-2018 23:40:26 PRC] PHP Stack trace:
+[25-Sep-2018 23:40:26 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[25-Sep-2018 23:40:26 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[25-Sep-2018 23:40:26 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[25-Sep-2018 23:40:26 PRC] PHP   4. ArtController->artaddAction() C:\wamp64\www\Framework\Core\Framework.class.php:82
+[25-Sep-2018 23:40:26 PRC] PHP   5. UploadLib->upload() C:\wamp64\www\Application\Controller\Admin\ArtController.class.php:48
+[25-Sep-2018 23:40:26 PRC] PHP   6. move_uploaded_file() C:\wamp64\www\Framework\Lib\UploadLib.class.php:88
+[26-Sep-2018 13:05:54 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:05:54 PRC] PHP Stack trace:
+[26-Sep-2018 13:05:54 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:05:54 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:05:54 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:05:54 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:05:54 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:05:59 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:05:59 PRC] PHP Stack trace:
+[26-Sep-2018 13:05:59 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:05:59 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:05:59 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:05:59 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:05:59 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:26 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:26 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:26 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:26 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:26 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:26 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:26 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:27 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:27 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:27 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:27 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:27 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:27 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:27 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:28 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:28 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:28 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:28 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:28 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:28 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:28 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:34 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:34 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:34 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:34 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:34 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:34 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:34 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:38 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:38 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:38 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:38 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:38 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:38 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:38 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:44 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:44 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:44 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:44 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:44 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:44 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:44 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:06:48 PRC] PHP Fatal error:  Call to undefined function cut_str() in F:\wamp\www\Application\View\Home\list1.html on line 79
+[26-Sep-2018 13:06:48 PRC] PHP Stack trace:
+[26-Sep-2018 13:06:48 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:06:48 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:06:48 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:06:48 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:06:48 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:64
+[26-Sep-2018 13:14:19 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:19 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:19 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:19 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:19 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:19 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:21 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:21 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:21 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:21 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:21 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:21 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:21 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:21 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:21 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:21 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:21 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:21 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:22 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:22 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:22 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:22 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:22 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:22 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:28 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:28 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:28 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:28 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:28 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:28 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:47 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:47 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:47 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:47 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:47 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:47 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Sep-2018 13:14:48 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\wamp\www\Application\View\Home\list1.html on line 78
+[26-Sep-2018 13:14:48 PRC] PHP Stack trace:
+[26-Sep-2018 13:14:48 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Sep-2018 13:14:48 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Sep-2018 13:14:48 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Sep-2018 13:14:48 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳转提示页面</title>
+    <style type="text/css">
+        body{
+            text-align:center;
+            font-size:20px;
+            /*background-color:#F90;*/
+            color:black;
+            padding-top:100px;
+            font-family:'微软雅黑'
+        }
+        span{
+            color:red;
+            font-size: 40px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            setTimeout(function(){
+                location.href='<?php echo $url;?>';
+            },"<?php echo $time.'000';?>");
+            setInterval("shijian()",1000);
+        }
+        function shijian(){
+            var obj=document.getElementById("d1");
+            var n=obj.innerHTML;
+            obj.innerHTML=n-1;
+        }
+
+    </script>
+</head>
+<body>
+<?php echo $path;?><br>
+<?php echo $msg;?>,页面将会在<span id="d1"><?php echo $time;?></span>秒后自动跳转
+</body>
+</html>

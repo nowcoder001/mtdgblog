@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>杰哥博客_用文字记录点滴成长</title>
+	<!-- reset -->
+	<link rel="stylesheet" href="/Public/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/Public/css/home-main.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main-wrapper">
+	 	<div>
+			<!-- header -->
+			<header>
+			<nav>
+				<div class="logo"><a href="index.php">FZ杰哥</a></div>
+				<ul>
+					<li><a href="index.php" class="active">首页</a></li>
+					<li><a href="index.php?p=Home&c=Home&a=list">分类</a></li>
+					<li id="sidebar_trigger"><a href="#">MENU<i class="fa fa-align-justify"></i></a></li>
+				</ul>
+			</nav>
+			<div id="banner" class="article">
+				<div class="inner">
+					<h1><?php echo $art['title'];?></h1>
+					<p class="sub-heading">文章标签:<?php echo $art['tag'];?></p>
+				</div>
+			</div>
+			</header>
+			<!-- content -->
+			<div class="content article">
+				<div class="content-wrapper">
+					<div class="article-info">
+					发表于<?php echo date("Y-m-d",$art['pubtime']);?>&nbsp;|&nbsp;编辑于<?php echo date("Y-m-d",$art['lastup']);?>&nbsp;|&nbsp;浏览:<?php echo $art['look'];?>
+					</div>
+					<article>
+					<div><?php echo $art['content'];?></div>
+					</article>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer>
+				<div class="sponsor">
+				<div class="sponsor-left">
+				<h3><?php echo $home['gifttitle'];?></h3>
+				<p><?php echo $home['giftmintitle'];?></p>
+				</div>
+				<div class="sponor-right">
+				<a href="#"><i class="fa fa-cc-visa"></i>赞助我</a>
+				<a href="#"><i class="fa fa-bitbucket"></i>喂养我</a>
+				</div>
+				</div>
+				<div class="share">
+					<ul class="share-group">
+						<li><i class="fa fa-facebook-square"></i></li>
+						<li><i class="fa fa-github"></i></li>
+						<li><i class="fa fa-qq"></i></li>
+						<li><i class="fa fa-weixin"></i></li>
+						<li><i class="fa fa-weibo"></i></li>
+					</ul>
+					<div class="copy">
+						&copy FZ杰哥 -2018
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- 侧栏,独立存在的 -->
+	<div class="mask"></div>
+	<div id="sidebar">
+	<ul>
+		<?php foreach($list as $v){?>
+		<li>
+		<?php 
+			static $n=0;
+			if($v['deep']==0)$n++;
+			if($v['parentid']==0){?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
+			<?php }else{?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
+			<?php }
+				if(!empty($v['deep']))
+					for($i=0;$i<$v['deep'];$i++)
+						echo "--";
+						echo $v['name'];
+				?>
+			</a>
+		</li>
+		<?php } ?>
+		<li><a href="index.php?p=Admin&c=Admin&a=admin">登陆</a></li>
+	</ul>
+	</div>
+	<button class="back-to-top">返回顶部</button>
+	<script src="/Public/js/jquery.min.js"></script>
+	<script src="/Public/js/main.js"></script>
+</body>
+</html>

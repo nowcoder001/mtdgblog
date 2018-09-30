@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>杰哥博客_用文字记录点滴成长</title>
+	<!-- reset -->
+	<link rel="stylesheet" href="/Public/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/Public/css/home-main.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="init(<?php echo $n;?>)">
+	<div class="main-wrapper">
+	 	<div>
+			<!-- header -->
+			<header>
+			<nav>
+				<div class="logo"><a href="index.php">FZ杰哥</a></div>
+				<ul>
+					<li><a href="index.php" class="active">首页</a></li>
+					<li><a href="index.php?p=Home&c=Home&a=list">分类</a></li>
+					<li id="sidebar_trigger"><a href="#">MENU<i class="fa fa-align-justify"></i></a></li>
+				</ul>
+			</nav>
+			<div id="banner" class="article">
+				<div class="inner">
+					<h1><?php echo $home['title1'];?></h1>
+					<p class="sub-heading"><?php echo $home['content1'];?></p>
+				</div>
+			</div>
+			</header>
+			<!-- list -->
+			<div class="list">
+			<!-- 列表 -->
+				<div class="listhead">
+					<ul>
+						<li>一级分类:</li>
+						<li id="li0" onmouseover="showDiv(0,this)"><a href="index.php?p=Home&c=Home&a=list&n=0">全部</a></li>
+						<?php foreach($list as $v){
+						if($v['deep']==0){
+						static $i=1;?>
+						<li id="li<?php echo $i;?>" onmouseover="showDiv(<?php echo $i;?>,this)"><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $i;?>&pid=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
+						<?php $i++;}
+						}?>
+					</ul>
+					<div class="hr"></div>
+						<?php foreach($list as $v){
+						static $j=1;
+						$i=$j;
+						if($v['deep']==0){
+							$p=$v['id'];
+							if($j==$i&&$j!=1){
+							?>
+						</ul>
+						</div>
+						<?php }?>
+					<div id="div<?php echo $j;?>">
+						<ul>
+							<li><?php echo $v['name'];?>:</li>
+							<?php }
+							if($v['parentid']==$p){
+							?>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $j-1;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
+							<?php }
+							else $j++;
+							}?>
+						</ul>
+					</div>
+				</div>
+			<!-- 主体部分 -->
+				<div class="listmain">
+				<!-- 一个文章列表 -->
+				<?php foreach($art as $a){?>
+						<div class="listcontent">
+							<a href="index.php?p=Home&c=Home&a=art&id=<?php echo $a['id'];?>">
+								<div class="img"><img src="/Public/uploads/<?php echo $a['pic'];?>" alt=""></div>
+								<h2 class="title"><?php echo $a['title'];?></h2>
+								<div class="content"><?php 
+									$newContent = strip_tags(stripslashes($a['content']));
+									$newContent = trim($newContent);
+									$patternArr = array('/\s/','/ /');
+									$replaceArr = array('','');
+									$newContent = preg_replace($patternArr,$replaceArr,$newContent);
+									$newContent = mb_strcut($newContent,0,895,'utf-8');
+									echo $newContent."......";?></div>
+								<div class="lc-bottom">
+									<div class="name">作者:FZ杰哥</div>
+									<div class="cat">分类:<?php echo $a['name'];?></div>
+									<div class="time">发表时间:<?php echo date("Y-m-d",$a['pubtime']);?></div>
+									<div class="tag">标签:<?php echo $a['tag'];?></div>
+								</div>
+							</a>
+						</div>
+				<?php }?>
+				</div>
+				<!-- 分页部分 -->
+				<div class="page">
+					<div class="pagelist">
+						<ul>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=1">首页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno-1;?>">上一页</a></li>
+							<?php for($i=$pageno-2;$i<$pageno+3;$i++){if($i<1)continue;if($i>$pagecount)break;?>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $i;?>"><?php echo $i;?></a></li>
+							<?php } ?>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno+1;?>">下一页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pagecount;?>">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer>
+				<div class="share">
+					<ul class="share-group">
+						<li><i class="fa fa-facebook-square"></i></li>
+						<li><i class="fa fa-github"></i></li>
+						<li><i class="fa fa-qq"></i></li>
+						<li><i class="fa fa-weixin"></i></li>
+						<li><i class="fa fa-weibo"></i></li>
+					</ul>
+					<div class="copy">
+						&copy FZ杰哥 -2018
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- 侧栏,独立存在的 -->
+	<div class="mask"></div>
+	<div id="sidebar">
+	<ul>
+		<?php foreach($list as $v){?>
+		<li>
+		<?php 
+			static $n=0;
+			if($v['deep']==0)$n++;
+			if($v['parentid']==0){?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
+			<?php }else{?>
+			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
+			<?php }
+				if(!empty($v['deep']))
+					for($i=0;$i<$v['deep'];$i++)
+						echo "--";
+						echo $v['name'];
+				?>
+			</a>
+		</li>
+		<?php } ?>
+		<li><a href="index.php?p=Admin&c=Admin&a=admin">登陆</a></li>
+	</ul>
+	</div>
+	<button class="back-to-top">返回顶部</button>
+	<script src="/Public/js/jquery.min.js"></script>
+	<script src="/Public/js/main.js"></script>
+	<script type="text/javascript">
+	function showDiv(n,m){
+		//把所有div内容隐藏
+		for(var i=1;i<=3;i++){
+			var AllDiv=document.getElementById("div"+i);
+			AllDiv.style.display="none";
+		}
+		//把所有li边框都清除
+		for(var j=1;j<=3;j++){
+			var AllLi=document.getElementById("li"+j);
+			AllLi.style.borderBottom="0px";
+		}
+		//获取div对象
+		var obj=document.getElementById("div"+n);
+		var m=document.getElementById("li"+n);
+		obj.style.display="block";
+		m.style.borderBottom="1px solid white";
+	}
+	//一旦加载就必须完成
+	function init(n){
+		//把所有div内容隐藏
+		for(var i=1;i<=3;i++){
+			var AllDiv=document.getElementById("div"+i);
+			AllDiv.style.display="none";
+		}
+		//把所有li边框都清除
+		for(var j=1;j<=3;j++){
+			var AllLi=document.getElementById("li"+j);
+			AllLi.style.borderBottom="0px";
+		}
+		//获取div对象
+		var obj=document.getElementById("div"+n);
+		var m=document.getElementById("li"+n);
+		obj.style.display="block";
+		m.style.borderBottom="1px solid white";
+	}
+	</script>
+</body>
+</html>

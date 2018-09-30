@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <link rel="stylesheet" href="/Public/css/amazeui.min.css">
+		<link rel="stylesheet" href="/Public/css/admin.css">
+		<link rel="stylesheet" href="/Public/css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+			[class*=am-u-]+[class*=am-u-]:last-child {
+    			float: left;
+			}
+			.am-u-sm-3 {
+    			width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="am-cf admin-main">
+		<!-- content start -->
+		<div class="admin-content">
+			<div class="admin-content-body">
+				<div class="am-g">
+					<form action="index.php?p=Admin&c=New&a=new&which=<?php echo $which;?>" class="am-form am-form-horizontal"
+						 method="post"
+						style="padding-top:30px;" data-am-validator>
+						<?php static $i=0;foreach($v as $list){?>
+						<div class="am-form-group" <?php if($i==0)echo "style='display: none;visibility:hidden;'";?>>
+							<label for="user-name" class="am-u-sm-3 am-form-label">
+							<?php echo $m[$i];?> </label>
+							<div class="am-u-sm-9">
+								<textarea type="text" rows="10" name="<?php echo $i;?>" warp="hard" required><?php echo $list;?></textarea>
+							</div>
+						</div>
+						<?php $i++;}?>
+						<div class="am-form-group">
+							<div class="am-u-sm-9 am-u-sm-push-3">
+								<input type="submit" class="am-btn am-btn-success" value="修改" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

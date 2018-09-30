@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/Public/css/amazeui.min.css" />
+		<link rel="stylesheet" href="/Public/css/admin.css" />
+	</head>
+
+	<body>
+		<div class="admin-content-body">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户管理</strong><small></small></div>
+			</div>
+
+			<hr>
+
+			<div class="am-g">
+				<div class="am-u-sm-12 am-u-md-6">
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> <a href="index.php?p=Admin&c=User&a=useradd">新增</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-sm-12 am-u-md-3">
+
+				</div>
+				<div class="am-u-sm-12 am-u-md-3">
+					<div class="am-input-group am-input-group-sm">
+						<input type="text" class="am-form-field">
+						<span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button">搜索</button>
+          </span>
+					</div>
+				</div>
+			</div>
+			<div class="am-g">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th>
+									<th class="table-id">ID</th>
+									<th class="table-title">用户名</th>
+									<th class="table-type">权限</th>
+									<th class="table-author am-hide-sm-only">最后登录时间</th>
+									<th class="table-set">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach($list as $rows){?>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><?php echo $rows['id'];?></td>
+									<td><?php echo $rows['name'];?></td>
+									<td>admin</td>
+									<td class="am-hide-sm-only"><?php echo date('Y-m-d H:i:s',$rows['last_login_time']);?></td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="index.php?p=Admin&c=User&a=useredit&id=<?php echo $rows['id'];?>">编辑</a></button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span><a href="index.php?p=Admin&c=User&a=userdel&id=<?php echo $rows['id'];?>"  onClick="return confirm('您确认要删除这条记录吗?')" title="移除">删除</a></button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<?php }?>
+							</tbody>
+						</table>
+						<!-- 分页位置 预留 是否单用户变为多用户?? -->
+						<hr>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

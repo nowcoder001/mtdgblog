@@ -1,0 +1,78 @@
+#login{
+	width: 100%;
+	margin: 0 auto;
+}
+#login p,span{
+	text-align: center;
+}
+.t1{
+	font-size: 28px;
+	font-family: "微软雅黑";
+}
+.t2{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: #999999;
+}
+.textbox{
+	width: 300px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #e2b709;
+	padding-left: 10px;
+}
+.code{
+	text-align: center;
+	line-height: 100%;
+	margin-left: 20px;
+}
+.code img{
+	width:118px;
+	height:44px;
+	/*border:1px solid black;*/
+	cursor:pointer;
+	vertical-align:top;
+	padding-right: 2px;
+}
+.code input{
+	width: 180px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #e2b709;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.submit{
+	width: 120px;
+	height: 40px;
+	margin-right: 80px;
+	background-color: #F0184d;
+	color: white;
+	border: 1px solid #666666;
+}
+.button{
+	width: 120px;
+	height: 40px;
+	padding-left: 10px;
+	background-color: white;
+	border: 1px solid #666666;
+}
+.remember{
+	width: 360px;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #666666;
+}
+.remember input,.remember span{
+	float: right;
+}
+.clear{
+	clear: both;	
+	margin-bottom: 30px;
+}
+.forget{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: black;
+	text-align: right;
+}
