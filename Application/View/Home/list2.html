@@ -37,7 +37,8 @@
 						<li id="li0" onmouseover="showDiv(0,this)"><a href="index.php?p=Home&c=Home&a=list&n=0">全部</a></li>
 						<?php foreach($list as $v){
 						if($v['deep']==0){
-						static $i=1;?>
+						static $i=1;
+						if($i>3)break;?>
 						<li id="li<?php echo $i;?>" onmouseover="showDiv(<?php echo $i;?>,this)"><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $i;?>&pid=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
 						<?php $i++;}
 						}?>
@@ -46,7 +47,7 @@
 						<?php foreach($list as $v){
 						static $j=1;
 						$i=$j;
-						if($v['deep']==0){
+						if($v['deep']==0&&$j<=3){
 							$p=$v['id'];
 							if($j==$i&&$j!=1){
 							?>
@@ -57,7 +58,7 @@
 						<ul>
 							<li><?php echo $v['name'];?>:</li>
 							<?php }
-							if($v['parentid']==$p){
+							if($v['parentid']==$p&&$j<=4){
 							?>
 							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $j-1;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
 							<?php }
@@ -155,7 +156,6 @@
 			</a>
 		</li>
 		<?php } ?>
-		<li><a href="index.php?p=Admin&c=Admin&a=admin">登陆</a></li>
 	</ul>
 	</div>
 	<button class="back-to-top">返回顶部</button>
