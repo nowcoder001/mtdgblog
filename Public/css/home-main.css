@@ -2,7 +2,7 @@
 * @Author: King
 * @Date:   2018-09-11 20:45:06
 * @Last Modified by:   King
-* @Last Modified time: 2018-09-26 15:14:19
+* @Last Modified time: 2018-10-05 14:28:41
 */
 nav{
 	background: transparent;
@@ -28,6 +28,9 @@ nav ul li a,nav .logo a{
 	text-decoration: none;
 	display: inline-block;
 	height: inherit;
+}
+.share a,.card-group a{
+	color: #fff;
 }
 nav div.logo{
 	float: left;
@@ -244,7 +247,7 @@ ul{
 	-moz-box-sizing: border-box;
 	/*border: 1px solid white;*/
 }
-.card p img{
+.card img{
 	width: 440px;
 	height: 200px;
 }

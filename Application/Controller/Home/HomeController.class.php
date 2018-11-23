@@ -14,7 +14,7 @@ class HomeController extends Controller{
 		$home=$model->find(1);
 		//获取项目信息,1表示最新的,6表示只取六个,12表示项目栏目的ID
 		$model=new ArtModel();
-		$pro=$model->getPageList(1,6,'art',12);
+		$pro=$model->getPageList(1,6,'art',28);
 		require __VIEW__.'index.html';
 	}
 	//前台分类页

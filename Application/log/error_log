@@ -279,3 +279,92 @@
 [26-Sep-2018 13:14:48 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
 [26-Sep-2018 13:14:48 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
 [26-Sep-2018 13:14:48 PRC] PHP   4. HomeController->listAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[15-Oct-2018 17:26:56 PRC] PHP Fatal error:  Call to undefined method HomeController::<foo>Action() in C:\wamp64\www\Framework\Core\Framework.class.php on line 82
+[15-Oct-2018 17:26:56 PRC] PHP Stack trace:
+[15-Oct-2018 17:26:56 PRC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Oct-2018 17:26:56 PRC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[15-Oct-2018 17:26:56 PRC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 10:39:29 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 10:39:29 UTC] PHP Stack trace:
+[16-Oct-2018 10:39:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 10:39:29 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 10:39:29 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 10:39:29 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 10:39:29 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 10:39:29 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 10:39:29 UTC] PHP Stack trace:
+[16-Oct-2018 10:39:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 10:39:29 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 10:39:29 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 10:39:29 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 10:39:29 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:03 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 12:21:03 UTC] PHP Stack trace:
+[16-Oct-2018 12:21:03 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 12:21:03 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 12:21:03 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 12:21:03 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:03 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:03 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 12:21:03 UTC] PHP Stack trace:
+[16-Oct-2018 12:21:03 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 12:21:03 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 12:21:03 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 12:21:03 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:03 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:20 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 12:21:20 UTC] PHP Stack trace:
+[16-Oct-2018 12:21:20 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 12:21:20 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 12:21:20 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 12:21:20 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:20 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:20 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[16-Oct-2018 12:21:20 UTC] PHP Stack trace:
+[16-Oct-2018 12:21:20 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Oct-2018 12:21:20 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[16-Oct-2018 12:21:20 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[16-Oct-2018 12:21:20 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[16-Oct-2018 12:21:20 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:40:58 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 13:40:58 UTC] PHP Stack trace:
+[14-Nov-2018 13:40:58 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 13:40:58 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 13:40:58 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 13:40:58 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:40:58 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:40:58 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 13:40:58 UTC] PHP Stack trace:
+[14-Nov-2018 13:40:58 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 13:40:58 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 13:40:58 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 13:40:58 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:40:58 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:41:17 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 13:41:17 UTC] PHP Stack trace:
+[14-Nov-2018 13:41:17 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 13:41:17 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 13:41:17 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 13:41:17 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:41:17 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:41:17 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 13:41:17 UTC] PHP Stack trace:
+[14-Nov-2018 13:41:17 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 13:41:17 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 13:41:17 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 13:41:17 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 13:41:17 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 20:18:26 UTC] PHP Warning:  require(C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php): failed to open stream: No such file or directory in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 20:18:26 UTC] PHP Stack trace:
+[14-Nov-2018 20:18:26 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 20:18:26 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 20:18:26 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 20:18:26 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 20:18:26 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 20:18:26 UTC] PHP Fatal error:  require(): Failed opening required 'C:\wamp64\www\Application\Controller\Home\4e5e5d7364f443e28fbf0d3ae744a59aController.class.php' (include_path='.;C:\php\pear') in C:\wamp64\www\Framework\Core\Framework.class.php on line 66
+[14-Nov-2018 20:18:26 UTC] PHP Stack trace:
+[14-Nov-2018 20:18:26 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[14-Nov-2018 20:18:26 UTC] PHP   2. Framework::run() C:\wamp64\www\index.php:4
+[14-Nov-2018 20:18:26 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
+[14-Nov-2018 20:18:26 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[14-Nov-2018 20:18:26 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81

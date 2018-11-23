@@ -25,7 +25,7 @@
 				<div class="inner">
 					<h1><?php echo $home['htitle1'];?></h1>
 					<p class="sub-heading"><?php echo $home['hcontent1'];?></p>
-					<button><a href="<?php echo $home['hurl1'];?>">芝麻开门</a></button>
+					<button><a href="<?php echo $home['hurl1'];?>">关于我</a></button>
 					<div class="more">
 						<p>更多</p>
 						<i class="fa fa-angle-double-down fa-2x"></i>
@@ -92,6 +92,7 @@
 					</div>
 					<div class="card-group clearfix">
 					<?php foreach($pro as $p){?>
+					<a href="index.php?p=Home&c=Home&a=art&id=<?php echo $p['id'];?>">
 						<div class="card">
 							<h3><?php echo $p['title'];?></h3>
 							<p><img src="/Public/uploads/<?php echo $p['pic'];?>"></p>
@@ -104,6 +105,7 @@
 									$newContent = mb_strcut($newContent,0,220,'utf-8');
 									echo $newContent."......";?></p>
 						</div>
+						</a>
 						<?php }?>
 					</div>
 				</div>
@@ -127,7 +129,7 @@
 						<li><i class="fa fa-github"></i></li>
 						<li><i class="fa fa-qq"></i></li>
 						<li><i class="fa fa-weixin"></i></li>
-						<li><i class="fa fa-weibo"></i></li>
+						<li><a href="index.php?p=Admin&c=Admin&a=admin"><i class="fa fa-weibo"></i></a></li>
 					</ul>
 					<div class="copy">
 						&copy FZ杰哥 -2018
@@ -158,7 +160,6 @@
 			</a>
 		</li>
 		<?php } ?>
-		<li><a href="index.php?p=Admin&c=Admin&a=admin">登陆</a></li>
 	</ul>
 	</div>
 	<button class="back-to-top">返回顶部</button>
