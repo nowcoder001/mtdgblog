@@ -67,23 +67,28 @@ class HomeController extends Controller{
 	}
 	//前台文章页
 	public function artAction(){
-		if(!empty($_GET)){
+		if(!empty($_GET['id'])){
 			//获得文章ID
 			$id=$_GET['id'];
 			$model=new ArtModel();
 			//更新文章浏览量
 			$model->updatelook($id);
+			//获得文章上一篇
+			$last=$model->totalart($id,0);
+			//获得文章下一篇
+			$next=$model->totalart($id,1);
 			//获得文章信息
 			$art=$model->find($id);
 			//获取侧栏信息
 			$model=new CategoryModel();
 			$list=$model->getCategoryTree();
 			//获得公众信息
-			$model=new HomeModel();
-			$home=$model->find(1);
+			//$model=new HomeModel();
+			//$home=$model->find(1);
 			require __VIEW__.'article.html';
 	}else{
-		$this->error('index.php?p=Home&c=Home&a=list','获取文章ID失败');
+		//header('Location: ' . $_SERVER['HTTP_REFERER']);
+		echo"<script>alert('没有下一条记录');history.go(-1);</script>";
 		exit;
 	}
 	}

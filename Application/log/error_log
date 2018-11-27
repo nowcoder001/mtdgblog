@@ -368,3 +368,85 @@
 [14-Nov-2018 20:18:26 UTC] PHP   3. Framework::initDispatch() C:\wamp64\www\Framework\Core\Framework.class.php:17
 [14-Nov-2018 20:18:26 UTC] PHP   4. spl_autoload_call() C:\wamp64\www\Framework\Core\Framework.class.php:81
 [14-Nov-2018 20:18:26 UTC] PHP   5. Framework::autoLoad() C:\wamp64\www\Framework\Core\Framework.class.php:81
+[26-Nov-2018 23:23:37 PRC] PHP Notice:  Undefined variable: home in F:\wamp\www\Application\View\Home\article.html on line 46
+[26-Nov-2018 23:23:37 PRC] PHP Stack trace:
+[26-Nov-2018 23:23:37 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:23:37 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:23:37 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:23:37 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:23:37 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:88
+[26-Nov-2018 23:23:37 PRC] PHP Notice:  Undefined variable: home in F:\wamp\www\Application\View\Home\article.html on line 47
+[26-Nov-2018 23:23:37 PRC] PHP Stack trace:
+[26-Nov-2018 23:23:37 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:23:37 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:23:37 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:23:37 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:23:37 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:88
+[26-Nov-2018 23:24:34 PRC] PHP Notice:  Undefined variable: home in F:\wamp\www\Application\View\Home\article.html on line 48
+[26-Nov-2018 23:24:34 PRC] PHP Stack trace:
+[26-Nov-2018 23:24:34 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:24:34 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:24:34 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:24:34 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:24:34 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:88
+[26-Nov-2018 23:24:34 PRC] PHP Notice:  Undefined variable: home in F:\wamp\www\Application\View\Home\article.html on line 49
+[26-Nov-2018 23:24:34 PRC] PHP Stack trace:
+[26-Nov-2018 23:24:34 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:24:34 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:24:34 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:24:34 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:24:34 PRC] PHP   5. require() F:\wamp\www\Application\Controller\Home\HomeController.class.php:88
+[26-Nov-2018 23:54:56 PRC] PHP Parse error:  syntax error, unexpected '?' in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:54:56 PRC] PHP Stack trace:
+[26-Nov-2018 23:54:56 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:54:56 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:54:56 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:54:56 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:54:58 PRC] PHP Parse error:  syntax error, unexpected '?' in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:54:58 PRC] PHP Stack trace:
+[26-Nov-2018 23:54:58 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:54:58 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:54:58 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:54:58 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:55:41 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:55:41 PRC] PHP Stack trace:
+[26-Nov-2018 23:55:41 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:55:41 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:55:41 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:55:41 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:55:42 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:55:42 PRC] PHP Stack trace:
+[26-Nov-2018 23:55:42 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:55:42 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:55:42 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:55:42 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:55:47 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:55:47 PRC] PHP Stack trace:
+[26-Nov-2018 23:55:47 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:55:47 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:55:47 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:55:47 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:56:51 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:56:51 PRC] PHP Stack trace:
+[26-Nov-2018 23:56:51 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:56:51 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:56:51 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:56:51 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:57:54 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:57:54 PRC] PHP Stack trace:
+[26-Nov-2018 23:57:54 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:57:54 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:57:54 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:57:54 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:57:54 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:57:54 PRC] PHP Stack trace:
+[26-Nov-2018 23:57:54 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:57:54 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:57:54 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:57:54 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82
+[26-Nov-2018 23:58:00 PRC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in F:\wamp\www\Application\View\Home\article.html on line 45
+[26-Nov-2018 23:58:00 PRC] PHP Stack trace:
+[26-Nov-2018 23:58:00 PRC] PHP   1. {main}() F:\wamp\www\index.php:0
+[26-Nov-2018 23:58:00 PRC] PHP   2. Framework::run() F:\wamp\www\index.php:4
+[26-Nov-2018 23:58:00 PRC] PHP   3. Framework::initDispatch() F:\wamp\www\Framework\Core\Framework.class.php:17
+[26-Nov-2018 23:58:00 PRC] PHP   4. HomeController->artAction() F:\wamp\www\Framework\Core\Framework.class.php:82

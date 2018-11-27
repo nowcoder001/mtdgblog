@@ -42,14 +42,9 @@
 			<!-- footer -->
 			<footer>
 				<div class="sponsor">
-				<div class="sponsor-left">
-				<h3><?php echo $home['gifttitle'];?></h3>
-				<p><?php echo $home['giftmintitle'];?></p>
-				</div>
-				<div class="sponor-right">
-				<a href="#"><i class="fa fa-cc-visa"></i>赞助我</a>
-				<a href="#"><i class="fa fa-bitbucket"></i>喂养我</a>
-				</div>
+				上一篇：<a href="index.php?p=Home&c=Home&a=art&id=<?php echo $last['id'];?>"><?php echo isset($last)? $last['title']:"没有上一条记录"; ?></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				下一篇：<a href="index.php?p=Home&c=Home&a=art&id=<?php echo $next['id'];?>"><?php echo isset($next)? $next['title']:"没有下一条记录"; ?></a>
 				</div>
 				<div class="share">
 					<ul class="share-group">
@@ -88,6 +83,7 @@
 			</a>
 		</li>
 		<?php } ?>
+		<li><a href="index.php?p=Admin&c=Admin&a=admin">登录</a></li>
 	</ul>
 	</div>
 	<button class="back-to-top">返回顶部</button>
