@@ -2,7 +2,7 @@
 * @Author: King
 * @Date:   2018-09-11 20:45:06
 * @Last Modified by:   King
-* @Last Modified time: 2018-11-27 12:00:39
+* @Last Modified time: 2018-11-27 20:17:03
 */
 nav{
 	background: transparent;
@@ -401,7 +401,7 @@ ul.share-group{
 	background: rgba(255,255,255,0.9);
 }
 .content-wrapper{
-	width: 1080px;
+	width: 64%;
 	margin: 0 auto;
 
 }
