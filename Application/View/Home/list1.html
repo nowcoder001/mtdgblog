@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>杰哥博客_用文字记录点滴成长</title>
 	<!-- reset -->
-	<link rel="stylesheet" href="/Public/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/home-main.css">
+	<link rel="stylesheet" href="<?php echo $GLOBALS['config']['home'];?>/Public/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['config']['home'];?>/Public/css/home-main.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body onload="init(<?php echo $n;?>)">
+<body onload="init(<?php echo $n;?>,<?php echo $m;?>)">
 	<div class="main-wrapper">
 	 	<div>
 			<!-- header -->
@@ -16,6 +16,7 @@
 			<nav>
 				<div class="logo"><a href="index.php">FZ杰哥</a></div>
 				<ul>
+					<li><a href="index.php?p=Admin&c=Admin&a=admin">登录</a></li>
 					<li><a href="index.php" class="active">首页</a></li>
 					<li><a href="index.php?p=Home&c=Home&a=list">分类</a></li>
 					<li id="sidebar_trigger"><a href="#">MENU<i class="fa fa-align-justify"></i></a></li>
@@ -33,41 +34,45 @@
 			<!-- 列表 -->
 				<div class="listhead">
 					<ul>
-						<li>一级分类:</li>
-						<li id="li0" onmouseover="showDiv(0,this)"><a href="index.php?p=Home&c=Home&a=list&n=0">全部</a></li>
+						<li>分类:</li>
+						<li id="li0" onmouseover="showDiv(0,<?php echo $m;?>)"><a href="index.php?p=Home&c=Home&a=list&n=0">全部</a></li>
 						<?php foreach($list as $v){
 						if($v['deep']==0){
 						static $i=1;
-						if($i>3)break;
 						?>
-						<li id="li<?php echo $i;?>" onmouseover="showDiv(<?php echo $i;?>,this)"><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $i;?>&pid=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
-						<?php $i++;}
+						<li id="li<?php echo $i;?>" onmouseover="showDiv(<?php echo $i;?>,<?php echo $m;?>)">
+							<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $i;?>&pid=<?php echo $v['id'];?>">
+								<?php echo $v['name'];?>
+							</a>
+						</li>
+						<?php
+						$i++;}
 						}?>
 					</ul>
 					<div class="hr"></div>
-						<?php foreach($list as $v){
-						static $j=1;
-						$i=$j;
-						if($v['deep']==0&&$j<=3){
-							$p=$v['id'];
-							if($j==$i&&$j!=1){
-							?>
-						</ul>
-						</div>
-						<?php }
-						?>
-					<div id="div<?php echo $j;?>">
-						<ul>
-							<li><?php echo $v['name'];?>:</li>
-							<?php }
-							if($v['parentid']==$p&&$j<=4){
-							?>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $j-1;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
-							<?php }
-							else $j++;
-							}?>
-						</ul>
-					</div>
+					<?php
+						foreach($list as $v){
+							if($v['deep']==0){$pid=$v['id'];static $j=1;?>
+								<!--有多少个一级分类就有多少个div-->
+								<div id="div<?php echo $j;?>">
+									<ul>
+										<?php
+										foreach($list as $v){
+											if($v['deep']==1&&$v['parentid']==$pid){
+										?>
+										<li>
+											<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $j;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
+												<?php echo $v['name'];?>
+											</a>
+										</li>
+										<?php
+											}
+										}
+										?>
+									</ul>
+								</div>
+					<?php	$j++;}
+						}?>
 				</div>
 			<!-- 主体部分 -->
 				<div class="listmain">
@@ -99,13 +104,13 @@
 				<div class="page">
 					<div class="pagelist">
 						<ul>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=1">首页</a></li>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno-1;?>">上一页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=1">首页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno-1;?>">上一页</a></li>
 							<?php for($i=$pageno-2;$i<$pageno+3;$i++){if($i<1)continue;if($i>$pagecount)break;?>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $i;?>"><?php echo $i;?></a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n<?php echo $n;?>&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $i;?>"><?php echo $i;?></a></li>
 							<?php } ?>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno+1;?>">下一页</a></li>
-							<li><a href="index.php?p=Home&c=Home&a=list&n=0&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pagecount;?>">尾页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pageno+1;?>">下一页</a></li>
+							<li><a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $pid?>&id=<?php echo $id?>&pageno=<?php echo $pagecount;?>">尾页</a></li>
 						</ul>
 					</div>
 				</div>
@@ -130,40 +135,32 @@
 	<!-- 侧栏,独立存在的 -->
 	<div class="mask"></div>
 	<div id="sidebar">
-	<ul>
-		<?php foreach($list as $v){?>
-		<li>
-		<?php 
-			static $n=0;
+		<ul>
+			<?php foreach($list as $v){static $n=0;?>
+			<?php
 			if($v['deep']==0)$n++;
-			if($v['parentid']==0){?>
-			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
-			<?php }else{?>
-			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
-			<?php }
-				if(!empty($v['deep']))
-					for($i=0;$i<$v['deep'];$i++)
-						echo "--";
-						echo $v['name'];
-				?>
-			</a>
-		</li>
-		<?php } ?>
-		<li><a href="index.php?p=Admin&c=Admin&a=admin">登录</a></li>
-	</ul>
+			if($v['deep']==0||$v['deep']==1){?>
+			<li>
+				<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
+					<?php echo str_repeat('--',$v['deep']).$v['name'];?>
+				</a>
+			</li>
+			<?php } ?>
+			<?php } ?>
+		</ul>
 	</div>
 	<button class="back-to-top">返回顶部</button>
-	<script src="/Public/js/jquery.min.js"></script>
-	<script src="/Public/js/main.js"></script>
+	<script src="<?php echo $GLOBALS['config']['home'];?>/Public/js/jquery.min.js"></script>
+	<script src="<?php echo $GLOBALS['config']['home'];?>/Public/js/main.js"></script>
 	<script type="text/javascript">
-	function showDiv(n,m){
+	function showDiv(n,t){
 		//把所有div内容隐藏
-		for(var i=1;i<=3;i++){
+		for(var i=1;i<=t;i++){
 			var AllDiv=document.getElementById("div"+i);
 			AllDiv.style.display="none";
 		}
 		//把所有li边框都清除
-		for(var j=1;j<=3;j++){
+		for(var j=1;j<=t;j++){
 			var AllLi=document.getElementById("li"+j);
 			AllLi.style.borderBottom="0px";
 		}
@@ -174,14 +171,14 @@
 		m.style.borderBottom="1px solid white";
 	}
 	//一旦加载就必须完成
-	function init(n){
+	function init(n,t){
 		//把所有div内容隐藏
-		for(var i=1;i<=3;i++){
+		for(var i=1;i<=t;i++){
 			var AllDiv=document.getElementById("div"+i);
 			AllDiv.style.display="none";
 		}
 		//把所有li边框都清除
-		for(var j=1;j<=3;j++){
+		for(var j=1;j<t;j++){
 			var AllLi=document.getElementById("li"+j);
 			AllLi.style.borderBottom="0px";
 		}

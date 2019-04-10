@@ -24,6 +24,9 @@ class HomeController extends Controller{
 		$list=$model_list->getCategoryTree();
 		//确定分类栏目
 		$n=isset($_GET['n'])?$_GET['n']:0;//确定栏目div和li的位置,默认是显示全部
+        //获得一级分类的总数
+        $model_category=new CategoryModel();
+        $m=$model_category->getFirstNumber();
 		$pid=isset($_GET['pid'])?$_GET['pid']:'';//确定父亲栏目(一级栏目)
 		$id=isset($_GET['id'])?$_GET['id']:'';//确定子栏目(二级栏目)
 		//获取分页信息
@@ -60,7 +63,7 @@ class HomeController extends Controller{
 		$model=new HomeModel();
 		$home=$model->find(1);
 		//不同栏目表现不同
-		if($n!=3)
+		if($pid!=28)
 		require __VIEW__.'list1.html';//正常的页面,普通页面
 		else
 		require __VIEW__.'list2.html';//伪瀑布流页面,项目页面

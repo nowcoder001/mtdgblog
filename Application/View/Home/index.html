@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>杰哥博客_用文字记录点滴成长</title>
 	<!-- reset -->
-	<link rel="stylesheet" href="/Public/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/home-main.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo $GLOBALS['config']['home'];?>/Public/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['config']['home'];?>/Public/css/home-main.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="main-wrapper">
@@ -16,6 +16,7 @@
 			<nav>
 				<div class="logo"><a href="index.php">FZ杰哥</a></div>
 				<ul>
+                    <li><a href="index.php?p=Admin&c=Admin&a=admin">登录</a></li>
 					<li><a href="index.php" class="active">首页</a></li>
 					<li><a href="index.php?p=Home&c=Home&a=list">分类</a></li>
 					<li id="sidebar_trigger"><a href="#">MENU<i class="fa fa-align-justify"></i></a></li>
@@ -120,7 +121,7 @@
 				</div>
 				<div class="sponor-right">
 				<a href="#"><i class="fa fa-cc-visa"></i>赞助我</a>
-				<a href="#"><i class="fa fa-bitbucket"></i>喂养我</a>
+				<a href="#"><i class="fa fa-bitbucket"></i>跟随我</a>
 				</div>
 				</div>
 				<div class="share">
@@ -141,30 +142,22 @@
 	<!-- 侧栏,独立存在的 -->
 	<div class="mask"></div>
 	<div id="sidebar">
-	<ul>
-		<?php foreach($list as $v){?>
-		<li>
-		<?php 
-			static $n=0;
+		<ul>
+			<?php foreach($list as $v){static $n=0;?>
+			<?php
 			if($v['deep']==0)$n++;
-			if($v['parentid']==0){?>
-			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
-			<?php }else{?>
-			<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['parentid'];?>&id=<?php echo $v['id'];?>">
-			<?php }
-				if(!empty($v['deep']))
-					for($i=0;$i<$v['deep'];$i++)
-						echo "--";
-						echo $v['name'];
-				?>
-			</a>
-		</li>
-		<?php } ?>
-		<li><a href="index.php?p=Admin&c=Admin&a=admin">登录</a></li>
-	</ul>
+			if($v['deep']==0||$v['deep']==1){?>
+			<li>
+				<a href="index.php?p=Home&c=Home&a=list&n=<?php echo $n;?>&pid=<?php echo $v['id'];?>">
+					<?php echo str_repeat('--',$v['deep']).$v['name'];?>
+				</a>
+			</li>
+			<?php } ?>
+			<?php } ?>
+		</ul>
 	</div>
 	<button class="back-to-top">返回顶部</button>
-	<script src="/Public/js/jquery.min.js"></script>
-	<script src="/Public/js/main.js"></script>
+	<script src="<?php echo $GLOBALS['config']['home'];?>/Public/js/jquery.min.js"></script>
+	<script src="<?php echo $GLOBALS['config']['home'];?>/Public/js/main.js"></script>
 </body>
 </html>
