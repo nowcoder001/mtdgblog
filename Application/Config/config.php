@@ -11,7 +11,7 @@ return array(
        'database'=>array(
         'host'	=>	'127.0.0.1',
         'user'	=>	'root',
-        'pwd'	=>	'',
+        'pwd'	=>	'root',
         'dbname'=>	'product'
          ),
     //应用程序的配置信息

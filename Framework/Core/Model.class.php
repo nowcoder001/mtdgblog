@@ -21,7 +21,7 @@ abstract class Model {
 	//获得主键字段
 	private function getPrimaryKey($table){
 		$rs=$this->db->query("desc `{$table}`");
-		while ($rows=mysql_fetch_assoc($rs)) {
+		while ($rows=mysqli_fetch_assoc($rs)) {
 			# code...
 			if ($rows['Key']=='PRI') {
 				# code...
