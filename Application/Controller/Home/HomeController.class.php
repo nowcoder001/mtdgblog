@@ -24,9 +24,6 @@ class HomeController extends Controller{
 		$list=$model_list->getCategoryTree();
 		//确定分类栏目
 		$n=isset($_GET['n'])?$_GET['n']:0;//确定栏目div和li的位置,默认是显示全部
-        //获得一级分类的总数
-        $model_category=new CategoryModel();
-        $m=$model_category->getFirstNumber();
 		$pid=isset($_GET['pid'])?$_GET['pid']:'';//确定父亲栏目(一级栏目)
 		$id=isset($_GET['id'])?$_GET['id']:'';//确定子栏目(二级栏目)
 		//获取分页信息

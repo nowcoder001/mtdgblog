@@ -1,4 +1,4 @@
 /.idea
 /vender
 /composer.lock
-/Application/log/error_log
+/Application/log/*.txt
